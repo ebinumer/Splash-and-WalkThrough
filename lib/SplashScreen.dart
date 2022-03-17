@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'HomeScreen.dart';
+import 'PageWalkthrough.dart';
 import 'Walkthrough.dart';
 
 
@@ -19,7 +20,7 @@ class SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
 
-      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => Walkthrough()), (_) => false);
+      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => Welcome()), (_) => false);
 
       // Navigator.pop(
       //     context,
